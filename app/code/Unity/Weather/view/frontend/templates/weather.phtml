@@ -1,0 +1,47 @@
+<?php $current_weather = $this->getCurrentWeather(765876)->getData(); ?>
+<h1><?php echo __('Weather') ?> <?php  echo $current_weather['data']['name']; ?></h1>
+<table>
+    <tbody>
+        <tr>
+            <td>Temperature</td>
+            <td><?php echo $current_weather['data']['main']['temp']; ?>
+            </td>
+        </tr>
+        <tr>
+            <td>Min</td>
+            <td><?php echo $current_weather['data']['main']['temp_min']; ?>
+            </td>
+        </tr>
+        <tr>
+            <td>Max</td>
+            <td><?php echo $current_weather['data']['main']['temp_max']; ?>
+            </td>
+        </tr>
+        <tr>
+            <td>Wind</td>
+            <td>
+                <?php echo $current_weather['data']['wind']['speed']; ?> m/s
+            </td>
+        </tr>
+        <tr>
+            <td>Cloudiness</td>
+            <td><?php echo $current_weather['data']['clouds']['all']; ?> %</td>
+        </tr>
+        <tr>
+            <td>Pressure</td>
+            <td><?php echo $current_weather['data']['main']['pressure']; ?> hpa</td>
+        </tr>
+        <tr>
+            <td>Humidity</td>
+            <td><?php echo $current_weather['data']['main']['humidity']; ?> %</td>
+        </tr>
+        <tr>
+            <td>Sunrise</td>
+            <td><?php echo date('H:i', $current_weather['data']['sys']['sunrise']); ?></td>
+        </tr>
+        <tr>
+            <td>Sunset</td>
+            <td><?php echo date('H:i', $current_weather['data']['sys']['sunset']); ?></td>
+        </tr>
+    </tbody>
+</table>
