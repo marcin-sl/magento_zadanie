@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+                id="Monogo_Weather::history"
+                title="Weather history"
+                module="Monogo_Weather"
+                sortOrder="51"
+                resource="Monogo_Weather::history"
+                action="monogo_weather/history"
+        />
+    </menu>
+</config>

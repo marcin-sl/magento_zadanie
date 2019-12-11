@@ -1,0 +1,35 @@
+<?php $current_weather = $this->getCurrentWeather(765876)->getData(); ?>
+<h1><?php echo __('Weather') ?></h1>
+<table>
+    <tbody>
+        <tr>
+            <td>Temperature</td>
+            <td><?php echo $current_weather['temp']; ?>
+            </td>
+        </tr>
+        <tr>
+            <td>Min</td>
+            <td><?php echo $current_weather['temp_min']; ?>
+            </td>
+        </tr>
+        <tr>
+            <td>Max</td>
+            <td><?php echo $current_weather['temp_max']; ?>
+            </td>
+        </tr>
+        <tr>
+            <td>Wind</td>
+            <td>
+                <?php echo $current_weather['wind']; ?> m/s
+            </td>
+        </tr>
+        <tr>
+            <td>Pressure</td>
+            <td><?php echo $current_weather['pressure']; ?> hpa</td>
+        </tr>
+        <tr>
+            <td>Humidity</td>
+            <td><?php echo $current_weather['humidity']; ?> %</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Monogo_Weather:etc/crontab.xsd">
+    <group id="default">
+        <job name="weather_cronjob" instance="Monogo\Weather\Model\Weather" method="checkWeather">
+            <schedule>*/10 * * * *</schedule>
+        </job>
+    </group>
+</config>
