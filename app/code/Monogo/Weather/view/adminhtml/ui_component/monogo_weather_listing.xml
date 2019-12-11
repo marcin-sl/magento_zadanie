@@ -33,8 +33,6 @@
         <columnsControls name="columns_controls"/>
         <exportButton name="export_button"/>
         <filters name="listing_filters" />
-        <filterSearch name="fulltext"/>
-
         <paging name="listing_paging"/>
     </listingToolbar>
     <columns name="spinner_columns">

@@ -9,6 +9,11 @@ class Weather extends \Magento\Framework\View\Element\Template
         return parent::_prepareLayout();
     }
 
+    /**
+     * Get weather from DB
+     * @param $city_id
+     * @return mixed
+     */
     public function getCurrentWeather($city_id)
     {
         $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
